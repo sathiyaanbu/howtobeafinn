@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />  -->
+    <link  type=type="text/javascript" href="js/index.js" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+       
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<title>Welcome</title>
+  <script >
+    
+    function fn(){
+      alert("Sorry! This feature is coming soon!");
+    }
+    function fn1(){
+      alert("Sorry! This feature is coming soon!");
+    }
+  </script>
+</head>
+
+<body>
+
+  
+       <!--************ classes/ ICONS  *************-->     
+ 
+ <div data-role="page" id="page01">
+  <div data-role="header" style="background: #f6f6f6">
+  <div class="row ">
+   <div class="col-xs-9 title">
+    <h1  >How to be a Finn</h1></div>
+    <div class="col-xs-3  dropdown"  onclick="fn1()">
+<div onclick="dropdown_option()" id="menubar" class="col-xs-1 ui-btn ui-icon-bars ui-btn-icon-right" ></div>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="create_profile.html">Create a profile</a>
+    <a href="login.html">Login</a>
+  </div>
+</div>
+</div></div>
+  <br>                            
+<div   data-role="main" class="containerbox" >
+
+<a href="intro.html" data-ajax="false">
+<img  id="intro01" src="img/Asset 20ldpi.png" /> 
+</a><br>
+
+ <a href="everdaykit.html" data-ajax="false">
+  <img  id="everydaykit01"   src="img/everydaykit_icon.png" />
+  </a> <br> 
+   <a href="get_to_know.html" data-ajax="false"> 
+   <img  id="gtk_01" src="img/gettokw.png" />
+   </a> <br> 	
+     <a href="food.html" data-ajax="false"> 
+     <img  id="food_01" src="img/food_icon.png" />
+     </a>  <br> 
+ 
+ <a href="communication.html" data-ajax="false"> 
+  <img id="com_01" src="img/communication_icon.png" />
+  </a> <br>
+  
+  <a href="moving_around.html" data-ajax="false"> 
+	 <img id="mov_01" src="img/moveAround_icon.png"  />
+   </a> <br>
+
+
+ 
+  <div class="row">
+<div class="col-xs-4 dots">..............................</div>
+<div class="col-xs-4 "><a href="quiz.html" data-ajax="false"> <button id="quiz_01">Quiz</button></a></div>
+<div class="col-xs-4 dots">...............................</div>
+</div>
+  <br>
+
+
+   <img id="out_01" src="img/outdoors_icon_inactive.png" alt="out" onclick="document.getElementById('o01').style.display='block'" ><br>
+ 
+ <img id="go_01" src="img/goingout_icon_inactive.png" alt="go" onclick="document.getElementById('go01').style.display='block'" ><br>
+
+ 
+   <img id="health_01" src="img/healthcare_icon_inactive.png" alt="health" onclick="document.getElementById('h01').style.display='block'" ><br>
+ 
+  <img id="cul_01" src="img/culture_icons_inactive.png" alt="cul" onclick="document.getElementById('cul01').style.display='block'"><br>
+ 
+   <img id="spacer_01" src="img/sports_icon_inactive.png" alt="sp" onclick="document.getElementById('sp01').style.display='block'"><br>
+ 
+   <img id="bur_01" src="img/bureaucracy_inactive.png" alt="bur" onclick="document.getElementById('bur01').style.display='block'"><br/>
+                  <div style="font-size: 9px; position:relative; left: 20%;"  >Bureaucracy</div>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+ </div>   
+ 
+</div>        
+          
+<div class="footer">
+   <img id="ply01" src="img/playlearn1.png" alt="ply">
+
+    <img id="calender_inact" onclick="fn()" src="img/calender_inactive.png" alt="calender">
+     <img id="profile_01"  onclick="fn1()" src="img/profile.png" alt="profile">
+</div>
+<div id="splash">
+         <img src="img/splash.png" style="width:100%;height:100%;"/> 
+  </div>    
+<script type="text/javascript" src="cordova.js"></script>
+  
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+
+
+  <!--     <form>
+       <fieldset data-role="controlgroup">
+      <div class="box mySlides"  id="quiz01">  
+        <legend class="question">1. What is the emergency telephone number?</legend>
+        <input type="radio"  name="q1" id="radio-choice-v-a1" value="0" >
+        <label for="radio-choice-v-a1">112</label>
+        <input type="radio" name="q1" id="radio-choice-v-b21" value="1">
+        <label for="radio-choice-v-b21">000</label>
+        <input type="radio" name="q1" id="radio-choice-v-c3" value="0">
+        <label for="radio-choice-v-c3">911</label>
+        <input type="radio" name="q1" id="radio-choice-v-d4" value="0">
+        <label for="radio-choice-v-d4">111</label> 
+      </div>
+    
+      <div class="box mySlides" id="quiz01">
+        <legend class="question">2. You need a prepaid sim-card for your mobile phone. Where to buy it?</legend>
+        <input type="radio"  name="q2" id="radio-choice-v-a2" value="0" >
+        <label for="radio-choice-v-a2">Electronic store</label>
+        <input type="radio" name="q2" id="radio-choice-v-b2" value="1">
+        <label for="radio-choice-v-b2">R-kioski</label>
+        <input type="radio" name="q2" id="radio-choice-v-c2" value="0">
+        <label for="radio-choice-v-c2">Mobile phone store</label>
+        <input type="radio" name="q2" id="radio-choice-v-d2" value="0">
+        <label for="radio-choice-v-d2">Grosery store</label>
+      </div>
+    
+      <div class="box mySlides" id="quiz01">
+        <legend class="question">3. You are thirsty, is it safe to drink tap water?</legend>
+        <input type="radio"  name="q3" id="radio-choice-v-a" value="0" >
+        <label for="radio-choice-v-a">Yes, if you boil it first</label>
+        <input type="radio" name="q3" id="radio-choice-v-b" value="1">
+        <label for="radio-choice-v-b">Yes. Tap water is totally clean and ecological</label>
+        <input type="radio" name="q3" id="radio-choice-v-c" value="0">
+        <label for="radio-choice-v-c">No. It’s better drink bottled water</label>
+        <input type="radio" name="q3" id="radio-choice-v-d" value="0">
+        <label for="radio-choice-v-d">No. you should not drink</label> 
+    </div>
+
+     <div class="box mySlides" id="quiz01"> 
+        <legend class="question">4. Finn drink a lot of:</legend>
+        <input type="radio"  name="q4" id="radio-choice-v-2a" value="0" >
+        <label for="radio-choice-v-2a">Tea</label>
+        <input type="radio" name="q4" id="radio-choice-v-2b" value="1">
+        <label for="radio-choice-v-2b">Coffee</label>
+        <input type="radio" name="q4" id="radio-choice-v-2c" value="0">
+        <label for="radio-choice-v-2c">Mate</label>
+        <input type="radio" name="q4" id="radio-choice-v-2d" value="0">
+        <label for="radio-choice-v-2d">Mate</label>
+    </div>
+
+      <div class="box mySlides" id="quiz01">
+        <legend class="question">5. You meet a Finnish person. How do you greet her/him?</legend>
+        <input type="radio"  name="q5" id="radio-choice-v-" value="0" >
+        <label for="radio-choice-v-">Kisses on both cheeks</label>
+        <input type="radio" name="q5" id="radio-choice-v-1" value="1">
+        <label for="radio-choice-v-1">Firm hand shake</label>
+        <input type="radio" name="q5" id="radio-choice-v-2" value="0">
+        <label for="radio-choice-v-2">Big hug</label>
+        <input type="radio" name="q5" id="radio-choice-v-3" value="0">
+        <label for="radio-choice-v-3">Just say Hi!</label>
+    
+   <div class="submitter" id="sub" onclick="document.getElementById('s01')">
+         <input class="quizSubmit" id="submitButton" onclick="bothfn()"
+          type="submit" value="Submit"   />
+    </div>
+    </fieldset>
+     </form> -->

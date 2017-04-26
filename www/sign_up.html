@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+<head >
+ <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+<title>Sign_Up</title>
+ <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+ <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="index.css" />
+    <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" data-semver="1.0.8"></script>
+   <script> var app = angular.module('plunker', []); </script>
+    <script src="js/upload.js"></script>
+    <script src="js/app1.js"></script>
+
+<script type="text/javascript">
+	
+
+ var check = function() {
+      if (document.getElementById('password').value ==
+          document.getElementById('conform_password').value) {
+          document.getElementById('message').style.color = 'green';
+          document.getElementById('message').innerHTML = 'matching';
+      } else {
+      		document.getElementById('message').style.color = 'red';
+          document.getElementById('message').innerHTML = 'not matching';
+      }
+  }
+
+</script>
+
+</head>
+<body ng-app="myapp">
+<div class="col-xs-12 title"><!-- <a > <h2>&</h2></a></div> -->
+	<a href="icon.html" data-ajax="false"> 
+       <span ><h2>&#8592; Sign up</h2></span></a>
+       </div>
+		<div class="main">
+		
+		<div class="col-xs-12 sign">
+			<form  class="formstyle" action="/register" method="post">
+				<div class="profilepic" ng-controller="UploadController">
+				
+				<img ng-src="{{imageSrc}}" class="profilepic1" /><br/>
+
+   
+     
+				<label for="files" class="btn">Upload Photo</label>
+				<input ng-hide="profilepic" style="visibility:hidden;" id="files" type="file" name="profilepic" ng-model="student.profilepic" ng-file-select="onFileSelect($files)" fileread="image" capture/>
+
+<!-- 
+   <i ng-hide="imageSrc">No image choosed</i> -->
+   
+
+				</div>
+				<input type="text" name="username" ng-model="student.username"  placeholder="Name" required><br><br>
+				<input  type="email" name="email" ng-model="student.email" placeholder="Enter email" required><br><br>
+				<input  type="password" name="password" ng-model="student.password"  onkeyup='check();' placeholder="Password" id="password" required><br><br>
+				<input type="password" name="conformpass"  onkeyup='check();' ng-model="student.conformpass"   id="conform_password"   placeholder="Confirm Password" required  ><br>
+
+				 <span id='message'></span><br><br>
+				<input type="submit" class="btn signupbtn" value="Sign Up"   id="btnSubmit"    ng-click="submit(student)">
+			</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

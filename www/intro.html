@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+     <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <link  type=type="text/javascript" href="js/index.js" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <title>intoduction</title>
+   
+</head>
+
+<body>
+    <!--***********************************************-->
+                       <!-- classes-1/ -introduction-->
+<!-- 
+<div id="lesson1" data-role="page" ><img src="../img/lesson.png" style="height: 50%; width: 100%;" onclick="document.getElementById('i01').style.display='block'"/></div> -->
+<!-- <div class="footer"></div> -->
+
+    <div id="i01" data-role="page" class="slideshow bg" >
+    <div class="card-bg01">
+    <div class="row ">
+    <div class="col-xs-2">
+       <a href="icon.html" data-ajax="false"> 
+       <span id="closerModel" class="close" title="Close Model">&times;</span></a>
+       </div>
+  <div class="col-xs-10"  >
+       <div id= "mybar"></div>
+       <progress value="0.5" max="100" id="p0" class="progressbar0" ></progress>
+        <p onclick="incr0()"></p> 
+ </div>
+
+ </div>
+ <div class="row">
+   <div class="col-xs-6 person"><img src="img/male_icon.png"></div>
+   <div class="col-xs-6 fox"><img src="img/foxldpi.png"></div>
+ </div>
+   
+ </div>
+ <div class="row ">
+   <div class="col-xs-12">
+     <br>
+     <div class="box mySlides"><p><div style="text-align: center;">Hi Friend! Welcome to Finland.    </div>
+            This is your ultimate guide how to master the art of being a Finn.
+            Let me walk you through what the game  is all about.
+            </p></div>
+  <div class="box mySlides"><p>     How To Be a Finn is an educational game to help learn all the    important things about your new home country.
+            Whether you are working, studying, unemployed, refugee, married to a Finn or just passing through this great country, we hope this game will help you.
+          </p></div>
+  <div class="box mySlides"><p>The game is about learning new things about Finland.
+            But it’s also about activating people to participate in your local community, find new friends, new hobby, maybe a new job?
+         </p></div>
+  <div class="box mySlides"><p>It has small learning ”classes”, each containing about 5-10 learning   cards with some important information about Finland.
+         </p></div>
+  <div class="box mySlides"><p>Each class will take about 3-5 minutes of your time.   Your progress will be saved automatically so you can continue where you left.
+        </p></div>
+  <div class="box mySlides"><p>Some classes include tasks that challenge you do something very    typical Finnish.    Maybe taste a local food, go to a rock concert, try local sport or sing  in a karaoke bar.
+         </p>
+ </div>
+
+  <div class="box mySlides"><p>So we will tell you the essential things about Finland: whether it’s about the food, culture, people, working in Finland. 
+            We will also tell you where to find the sweetest spots, the hidden gems.<br> Those places that only the locals know.
+</p>
+</div>
+</div>
+</div>
+
+   <a class="continue" id="continue01" onclick="todo_0()"><img src="img/continue_btnldpi.png" width="130px" height="30px" /></a>
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
+<audio id="audio" src="img/pickup.wav" ></audio>
+
+  <div class="box mySlides"><p>And by ”We”, we mean all the other new comers and foreigners that have once been there.<br>  The game is about learning new stuff but also bringing people together and sharing experiences.   So we invite you to play the game, learn and create more content for others.
+      </p> 
+      
+  <div class="col-xs-12" ><a href="ready.html" data-ajax="false"> <img src="img/continue_btnldpi.png" id="result_continue_btn" /></a>
+</div>
+ </div>
+ </div>
+  
+
+<div class="footer"> </div>
+<script type="text/javascript" src="cordova.js"></script>
+  
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+     <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <link  type=type="text/javascript" href="js/index.js" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <title>food</title>
+  
+</head>
+
+<body>
+    <!--***********************************************-->
+                       <!-- classes-1/ -food-->
+
+    <div id="f01" data-role="page" class="slideshow bg" >
+    <div class="card-bg03">
+    <div class="row ">
+    <div class="col-xs-2">
+    <a href="icon.html" data-ajax="false"> 
+       <span id="closerModel" class="close" title="Close Model">&times;</span></a>
+       </div>
+  <div class="col-xs-10"  >
+       <div id= "mybar"></div>
+       <progress value="0.5" max="100" id="p2" class="progressbar0" ></progress>
+        <p onclick="incr2()"></p> 
+ </div>
+
+ </div>
+ <div class="row">
+   <div class="col-xs-6 person"><img src="img/male_icon.png"></div>
+   <div class="col-xs-6 fox"><img src="img/foxldpi.png"></div>
+ </div>
+
+ <div class="row">
+   <div class="col-xs-12">
+     <br>
+     <div class="box mySlides"><p>Hi Friend! 
+                     Welcome to Finland.<br/>
+
+            This is your ultimate guide how to master the art of being a Finn.<br/>
+
+            Let me walk you through what the game  is all about.</p></div>
+
+  <div class="box mySlides"><p>Remember to add spices   Finnish food is generally rather tasteless. So you better add salt and spices.
+  </p></div>
+
+
+  <div class="box mySlides"><p>Porridge for breakfast  .<br/>For breakfast people have usually either porridge (oat, rye) or rye bread. And coffee. Plenty of coffee.</p></div>
+
+
+  <div class="box mySlides"><p>Coffee  !!!<br/>Did you know that Finland is the first at coffee consumption in the world with 9,6 kg per capita, consumption of 2,64 cups/day</p></div>
+
+
+  <div class="box mySlides"><p>Peasoup and pancakes on thursdays  .<br/>During the war the Finnish army was fed with pea soup (hernekeitto).<br/> Finnish Defence Forces as well as many cafeterias continues the tradition of serving pea soup accompanied by pancakes (pannukakku) for lunch every Thursday.</p>
+  </div>
+</div>
+</div>
+<a class="continue" id="continue01" onclick="todo_1()"><img src="img/continue_btnldpi.png" width="130px"; height="30px"/></a>
+<audio id="audio" src="img/pickup.wav" ></audio>
+  <div class="box mySlides"><p><b>Pizza, pizza, pizza</b><br/>There are plenty of pizzerias in
+Finland. Cost per pizza is around 5-10 euros.<br/>You can either choose betweenKotipizza (big Finnish franchise)or one of the small independentpizzerias.<br/>Check the nearest and most recommended pizzerias <a href="pizza_link.html" data-ajax="false"> here</a></p> 
+
+<div class="col-xs-12"><a href="result_food.html" data-ajax="false"> <img src="img/continue_btnldpi.png" id="result_continue_btn" /></a>
+</div>
+</div>
+</div></div>
+ 
+
+<div class="footer"> </div>
+<script type="text/javascript" src="cordova.js"></script>
+  
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

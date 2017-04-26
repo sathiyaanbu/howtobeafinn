@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "fi.how2beafinn.org"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "fi.how2beafinn.org"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "fi.how2beafinn.org"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "fi.how2beafinn.org"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "fi.how2beafinn.org"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "fi.how2beafinn.org"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "fi.how2beafinn.org"
+        }
+    },
+    "dependent_plugins": {}
+}

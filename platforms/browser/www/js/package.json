@@ -1,0 +1,15 @@
+{
+  "name": "mysqlApplication",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular-route": "^1.4.8",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.0",
+    "install": "^0.8.8",
+    "mysql": "^2.10.2"
+
+  }
+  {
+  "author":"howtobeateam"
+  }
+}

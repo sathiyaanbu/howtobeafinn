@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+<title>Login</title>
+ <link rel="stylesheet" type="text/css" href="css/index.css" />
+ 
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js" ></script>
+<script type="text/javascript" src="js/server.js" ></script>
+</head>
+<body >
+<div id="logincontainer" >
+	<div ng-app="myapp" ng-controller="myCtrl">
+		<div class="main">
+		<div class="row">
+		<div class="col-xs-12 title">
+		<a href="create_profile.html" data-ajax="false"> 
+       <span ><h4>&#8592; Login</h4></span></a>
+       </div>
+		<!-- <a onclick="myFunction_1()"> <h4></h4></a>
+		</div> -->
+		</div>
+		<div class="row">
+		<div class="col-xs-8 title1"><h2>How to<br/> Be a <br/>Finn?</h2></div>
+		<div class="col-xs-4 title1"><img src="img/foxldpi.png"></div>
+		</div>
+		<div class="col-xs-12 login">	
+		<form  class="formstyle" action="http://localhost:5500/verifyuser" method="post">
+				
+				<input  type="text" name="username" ng-model="student.username"  placeholder="Name" required><br>
+				<input type="password" name="password" ng-model="student.password" placeholder="Password" required><br>
+				
+				<input type="submit" class="btn" value="Login" ng-click="submit(student)">
+			</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
+
