@@ -1,0 +1,19 @@
+{
+  "name": "finn",
+  "version": "4.0.3",
+  "description": "Howtobeafinn game app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sathiyaanbu/howtobeafinn.git"
+  },
+  "author": "Howtobeafinn Team",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  
+  "homepage": "https://github.com/sathiyaanbu/howtobeafinn.git"
+}
