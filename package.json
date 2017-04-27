@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/sathiyaanbu/howtobeafinn.git"
   },
+  "engines": {
+      "node": "3.10.10"
+  },
   "author": "Howtobeafinn Team",
   "license": "Apache-2.0",
   "keywords": [
