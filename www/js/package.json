@@ -1,7 +1,7 @@
 {
-  "name": "fin",
+  "name": "Howtobeafinn",
   "version": "1.0.0",
-  "description": "login",
+  "description": "Howtobeafinn game app",
   "main": "app.js",
   "dependencies": {
      "angular-route": "^1.4.8",
@@ -23,7 +23,7 @@
     "test": "mocha",
     "start": "node server.js"
   },
-  "author": "Howtobeafinn team",
+  "author": "Howtobeafinn Team",
   "license": "ISC"
 }
 

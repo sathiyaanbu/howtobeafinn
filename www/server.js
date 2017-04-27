@@ -6,11 +6,11 @@ var connection = mysql.createConnection({
 
 
   host: 'localhost',
-  port: '5500',
+  port: '5000',
   user: 'b0334abf83c266',
   password: '49a52da7',
  
-  database: 'heroku_4b8e16da2cf1943 '
+  database: 'heroku_4b8e16da2cf1943'
  
 });
 var bodyParser = require('body-parser');
@@ -83,4 +83,4 @@ app.post('/verifyuser', function(req,res){
 
 });
 
-app.listen(5500);
+app.listen(5000);
