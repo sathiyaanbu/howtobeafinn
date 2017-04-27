@@ -1,13 +1,13 @@
 {
   "name": "Howtobeafinn",
-  "version": "4.0.3",
+  "version": "1.0.0",
   "description": "Howtobeafinn game app",
   "repository": {
     "type": "git",
     "url": "https://github.com/sathiyaanbu/howtobeafinn.git"
   },
   "engines": {
-      "node": "3.10.10"
+      "node": "6.9.4"
   },
   "author": "Howtobeafinn Team",
   "license": "Apache-2.0",
