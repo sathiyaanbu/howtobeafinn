@@ -94,103 +94,236 @@ body {
    
    
    }
-
-   .card-bg02{
+    .lesson_bg_everydaykit{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background: url("../img/survivalkit.jpg");
+  position:absolute; 
+  background-size: cover;   
   width:100%; 
-  background: url("../img/everydayldpi.png");
-       background-size: cover;
-    height:200px;
-   
-    z-index: 0;
-    margin: 0px !important;
+  top: 0; 
+  left: 0;
+  z-index: 0;
+  margin: 0px !important;
+ height:500px;
 }
 
- .card-bg03{
+    .lesson_bg_gtk{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background: url("../img/Get to Know a Finn.jpg");
+  position:absolute; 
+  background-size: cover;   
   width:100%; 
-  background: url("../img/foodxhdpi.png");
-       background-size: cover;
-    height:200px;
-   
-    z-index: 0;
-    margin: 0px !important;
+  top: 0; 
+  left: 0;
+  z-index: 0;
+  margin: 0px !important;
+ height:500px;
 }
-.card-bg04{
+
+ .lesson_bg_food{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background: url("../img/Food.jpg");
+  position:absolute; 
+  background-size: cover;   
   width:100%; 
-  background: url("../img/commuxhdpi.png");
-       background-size: cover;
-    height:200px;
-   
-    z-index: 0;
-    margin: 0px !important;
+  top: 0; 
+  left: 0;
+  z-index: 0;
+  margin: 0px !important;
+ height:500px;
 }
-.card-bg05{
+ .lesson_bg_communication{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background: url("../img/Communication.jpg");
+  position:absolute; 
+  background-size: cover;   
   width:100%; 
-  background: url("../img/movingxhdpi.png");
-       background-size: cover;
-    height:200px;
-   
-    z-index: 0;
-    margin: 0px !important;
+  top: 0; 
+  left: 0;
+  z-index: 0;
+  margin: 0px !important;
+ height:500px;
 }
-.card-bg06{
-  width:100%; 
-  background: url("../img/communicationxhdpi.png");
-       background-size: cover;
-    height:200px;
+
    
-    z-index: 0;
-    margin: 0px !important;
+   .lesson_bg_movingaround{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background: url("../img/Moving_around.jpg");
+  position:absolute; 
+  background-size: cover;   
+  width:100%; 
+  top: 0; 
+  left: 0;
+  z-index: 0;
+  margin: 0px !important;
+ height:500px;
 }
-.card-bg07{
-  width:100%; 
-  background: url("../img/quizxhdpi.png");
-       background-size: cover;
-    height:200px;
-   
-    z-index: 0;
-    margin: 0px !important;
+.lesson_bg_quiz{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background: url("../img/quiz_lesson.jpeg");
+  position:absolute; 
+  background-size: cover;   
+  
+  top: 0; 
+  left: 0;
+  z-index: 0;
+  margin: 0px !important;
+ height:500px;
 }
-.card-bg01{
+
+
+.bg_lessonbox {
+       
+      padding: 20px;
+   white-space:nowrap;
+      overflow-x:auto;
+   }
+
+.box_square{
+      background-color: white;
+      border-radius: 20px;
+      height: 230px;
+      width: 180px;
+      display:inline-block;
+     margin: 180px 40px 0 30px;
+     padding: 10px 30px 0 25px; 
+     text-align:center;
+     font-size: 12px;
+    
+}
+
+.box_square_quiz{
+      background-color: white;
+      border-radius: 20px;
+     
+      height: 230px;
+     
+      width: 180px;
+      display:inline-block;
+     margin: 220px 40px 0 80px;
+     padding: 10px 25px 0 25px; 
+     text-align:center;
+     font-size: 12px;
+    
+}
+
+
+#lesson_continue_btn{
+position:relative;
+
+height:30px; 
+width:100px;   
+
+}
+#lesson_select_btn1{
+position:relative;
+border-radius: 60px;
+background-color: #2396ef;
+color: black;
+height:30px; 
+width:100px;
+padding: 5px;
+}
+#bottom_color_box_in_lessonbg{
+  background-color: #6af7be;
+  background-size: cover;
+  position: fixed;
+  bottom: 20px;
+}
+#lesson_title h4{
+
+  color:black;
+}
+  .card-bg{
+  -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+   position: absolute;    
   width:100%; 
-  background: url("../img/introldpi.png");
-       background-size: cover;
+  top: 0; 
+   left: 0;
+   background-size: cover;
     height:200px;
-   
-    z-index: 0;
+    z-index: -1;
     margin: 0px !important;
 }
 
 .card-bgg{
-  width:100%; 
-  
-       background-size: cover;
+ 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%; 
     height:200px;
-   
+   top: 0; 
+left: 0; 
     z-index: 0;
     margin: 0px !important;
 }
+.card-bg07{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background: url("../img/quizxhdpi.png");
+  position:relative;    
+  width:100%; 
+  top: 0; 
+  left: 0;
+  z-index: -1;
+  margin: 0px !important;
+ height:200px;
+}
+
 
 progress {
-    border: 0px solid white;
+  margin:40px 5px 5px 0px; 
+  color: #81ea8d;
+  background-color: #81ea8d !important;
+ border-radius: 10px;
+  height:5px !important;
+  width:95%;  
+  opacity: 80;
+  
+  position: relative;
+    /*border: 0px solid #cc99ff;
     border-radius: 4px;
     width: 100%;
     height: 15px;
     margin: 4px;
     display: block;
-    opacity: 80;
+    opacity: 80;*/
 }
- .progressbar0{
- margin:40px 5px 5px 0px; 
  
+.progress{
+margin:40px 5px 5px 0px; 
+  color: #81ea8d;
+  background-color: #81ea8d !important;
+ border-radius: 10px;
   height:5px !important;
   width:95%;  
-  background-color:white !important;
- border-color: white;
   opacity: 80;
- }
+  
+  position: relative;
+  
+}
+ 
+
  #closerModel{
     cursor: pointer;  
-    color: white;
+    color: #000000;
     font-size: 1.5em;
     line-height: 3.5;
     position: relative;
@@ -469,8 +602,12 @@ top:40%;
   color: #000;
   padding: 30px;
   text-align: justify;
-  
+  }
 
+  .mySlides1{
+  color: #000;
+  padding: 30px;
+  text-align: justify;
   }
 
  

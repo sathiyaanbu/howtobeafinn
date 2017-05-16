@@ -8,7 +8,7 @@
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
      <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <link  type=type="text/javascript" href="js/index.js" />
+    
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -20,21 +20,85 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+
   <title>everyday_survivor_kit</title>
-    
+   
 
 </head>
 
 <body>
     <!--***********************************************-->
                        <!-- classes-1/ -introduction-->
-<!-- <div id="lesson1" data-role="page" ><img src="../img/lesson.png" style="height: 50%; width: 100%;" onclick="document.getElementById('e01').style.display='block'"/></div>
-<div class="footer"></div> -->
+<div id="lesson_everydatkit" data-role="page"  class="lesson_bg_everydaykit">
+     <div id="lesson_title">
+       <a href="icon.html" data-ajax="false"> 
+       <span ><h5 style="margin:30px; color: white;">&#8592; Everyday survivor kit</h5></span></a>
+    </div>
+
+
+<div class="bg_lessonbox"> 
+
+   <div class="box_square" > 
+   <div class="row"><p><b><div style="text-align: center;">Lesson 1/4</div></b> <br>In this lesson you will<br> learn just the basics how to <br>survive in Finland <br>when you first arrive.<br><br>Length of the lesson: 2 min</p>
+   </div>
+   
+    <a href="#e01" data-ajax="false"> <img src="img/select_btn_everydaykit.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+    </div>
+
+    <div class="box_square" > 
+    <div class="row"><p><b><div style="text-align: center;">Lesson 2/4</div></b> <br>Sorry! this features is <br> coming soon.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="" data-ajax="false"> <img src="img/select_btn_everydaykit.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+    </div>
+
+    <div class="box_square" > 
+    <div class="row"><p><b><div style="text-align: center;">Lesson 3/4</div></b> <br>Sorry! this features is <br> coming soon.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="" data-ajax="false"> <img src="img/select_btn_everydaykit.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+    </div>
+
+    <div class="box_square" > 
+    <div class="row"><p><b><div style="text-align: center;">Lesson 4/4</div></b> <br>Sorry! this features is <br> coming soon.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+     <a href="" data-ajax="false"> <img src="img/select_btn_everydaykit.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+     </div>
+   
+     </div>
+</div>
+<div id="bottom_color_box_in_lessonbg"></div>
+</div>
+
+<!-- **************** lesson 1 ****************** -->
+
 
     <div id="e01" data-role="page" class="slideshow bg" >
      
-     <div class="card-bg02" >
+    <div class="card-bgg">
+     
+      <div class="card-bg " style="  background-image:url(img/1_Forest_and_view_from_hill.jpg);" >  </div> 
+       <div class="card-bg " style="  background-image:url(img/1_Forest_and_view_from_hill.jpg);"></div>
+       <div class="card-bg " style="  background-image:url(img/3-4_punkki.jpg);" ></div>
+       <div class="card-bg " style="  background-image:url(img/3-4_punkki.jpg);" ></div>
+      <div  class="card-bg " style="  background-image:url(img/5_winter.jpg);" ></div>
+      <div class="card-bg " style="  background-image:url(img/help.jpeg);"></div>
+      <div class="card-bg " style="  background-image:url(img/8_Winter_Blue.JPG);" > </div>
+      <div class="card-bg " style="  background-image:url(img/3_Freezing_cold.jpg);"></div>
+                 
       
     <div class="row">
     <div class="col-xs-2">
@@ -43,90 +107,193 @@
        </div>
   <div class="col-xs-10"  >
        <div id= "mybar"></div>
-       <progress value="0.5" max="100" id="p1" class="progressbar0" ></progress>
-        <p onclick="incr1()"></p> 
+       <progress value="0.5" max="100" id="p0" class="progress" ></progress>
+        <p onclick="incr()"></p> 
  </div>
 
  </div>
  <div class="row">
-   <div class="col-xs-6 person"><img src="img/male_icon.png"></div>
+   <div class="col-xs-6 person"><img src="img/person_everyday.png"></div>
    <div class="col-xs-6 fox"><img src="img/foxldpi.png"></div>
  </div>
-
+</div>
  <div class="row">
    <div class="col-xs-12">
      <br>
-     <div class="box mySlides"><p>Finland is safe – so relax....
-Congrats! <br/>You have landed probably one of the safest places in the world.   <br>In Finland there are no dangerous animals, not even nasty bugs, except mosquitos but they are harmless.  <br>The streets are quite, hardly any pollution, food and water is clean.
-</p></div>
+     <div class="box mySlides"><p>Finland is safe – so relax. <br>You have landed probably one of the safest places in the world.</p></div>
 
 
-  <div class="box mySlides"><p>Finns might enjoy silence but most of them really like to help foreigners in need. <br>And Finns talk surprisingly good English.  This advice goes of course everywhere you travel but it’s one of the most important ones:<br> ask for help.
+  <div class="box mySlides"><p>There are no dangerous animals. <br>The streets are quite, hardly any pollution, food and water is <br>clean.
   </p></div>
 
 
-  <div class="box mySlides"><p>Wear proper clothing!<br>
-
-Yep, it’s freezing out either wet Or both.<br>
-
-During winter the temperature might go low as -30C. The key is to wear clothes in many layers (in Finnish: ’kerrospukeutuminen’).<br>
-
-So wearing 3 pants on top of each other is just OK.<br>
-
-And remember to buy good beanie or woolly hat.
+  <div class="box mySlides"><p><b><div style="text-align: center;">Punkki!</b></div>
+Well actually there is one thing to aware. <br>The most dangerous animal is the tick (”Punkki”). <br>Small, blood sucking insect that carries for example the Lyme disease. 
 </p></div>
 
 
-  <div class="box mySlides"><p>You can drink tap water.<br>The tap water is clean and 100% safe to drink. Don’t buy bottled water. It’s useless and also bad for nature.</p></div>
+  <div class="box mySlides"><p>It appears during the summer and usually lives at the ground in the vegetation. <br>You should wear long pants while walking in the forest and longer grass. <br>Make sure to check your body at evening in case it has bitten. </div>
 
 
-  <div class="box mySlides"><p>In emergency, call "112".<br>112 is the emergency telephone number (in Finnish: ”yleinen hätänumero”) for police, ambulance and fire department (works everywhere in EU)<br>Don’t hesitate to call it!  More info (pdf)</p></div>
+  <div class="box mySlides"><p>But during winter your safe.<br> How lucky we are to have whole land frozen half the year!</div>
 
-  <div class="box mySlides"><p>Police is your friend.<br>Don’t be afraid to contact police in Finland. They are very  trustworthy and there is minimal corruption in police force.<br>So in case of accident or even small crime, it’s better to call the police.
+  <div class="box mySlides"><p>Finns might enjoy silence but most of them really like to help foreigners in need.<br>Finns talk surprisingly good English. <br>So don’t hesitate to ask for help.
 </p></div>
 
 
-  <div class="box mySlides"><p>Need a prepaid? Go to R-kioski.<br> R-Kioski is the local ’7-Eleven’ i.e. convenience store for all small stuff like snacks and softdrinks.  You can find them in every city.<br> For foreigner, this is usually the first stop where to buy local prepaid sim-card for mobile phone. You can buy also bus and train tickets here.
+  <div class="box mySlides"><p>Yep, It's freezing out there. Or wet. <br>Probably both During winter the temperature might go low as -30C. <br>The key is to wear clothes in many layers<br>(in Finnish: ’kerrospukeutuminen’).
 </p></div>
-
-
-  <div class="box mySlides"><p>Take vitamin-D.<br> At this high north, you wont get enough sun for your body to produce oh so important vitamin D.<br>   Official recommendation is to take 10 micrograms per day, every day of the year.
-</p></div>
-
-  <div class="box mySlides"><p>Biggest thread for your life in Finland?<br> Boredom. That’s right. <br> This is because of the darkness and cold winters, lack of people and activities outside…. It might get boring.<br> Best way to fight against loneliness, boredom and cold dark winter, is to find a hobby and be active as possible.</p></div>
-
-<div class="box mySlides"><p>Credit cards are commonly used even in very small purchases. ATM’s are getting rare and hard to find.<br></p></div>
-
-
-    <div class="box mySlides"><p>Need food?<br> Grocery stores are usually open everyday between 7-21. Some are open until 23.  So you shouldn’t have troubles in getting your shopping done.<br>
-</p></div>
-
-     <div class="box mySlides"><p>Restaurants close usually at 22.00.<br>
-
-Many restaurants close their kitchen between 21-22. Some are closed on sundays.   Usually Finns go to restaurant to have dinner quite early, between 18-21.
-</p></div>
-
-      <div class="box mySlides"><p>You can buy alcohol only from governement run spirit-shops called ”Alko”.  Grosery stores can sell alcohol when it has alcohol 4.7% or under.
-      </p></div>
 
 </div>
 </div> 
 
-<a class="continue" id="continue01" onclick="todo_2()"><img src="img/continue_btnldpi.png" width="130px"; height="30px"/></a>
-<audio id="audio" src="img/pickup.wav" ></audio>
+<a class="continue" id="continue01" onclick="todo_3()"><img src="img/continue_every_btn.png" width="130px"; height="30px"/></a>
+<audio id="audio_click" src="img/pickup.wav" ></audio>
 
-  <div class="box mySlides"><p>
-  And don’t even think about taking your drink outside a bar. You are allowed to drink in only in side bar. But now in toilet or separate tobacco area.</p>
+  <div class="box mySlides"><p>So wearing 3 pants on top of each other is just OK. <br>Remember to buy good beanie or woolly hat.</p>
   
 
-  <div class="col-xs-12"><a href="result.html" data-ajax="false"> <img src="img/continue_btnldpi.png" id="result_continue_btn" /></a>
+  <div class="col-xs-12"><a href="#page03" data-ajax="false"> <img src="img/continue_every_btn.png" id="result_continue_btn" /></a>
   <br>
   <br>
 </div>
 </div>
-</div></div>
+</div>
+   
+
         
-<div class="footer"> </div>
+<div data-role="page" id="page03" style="background-color: white; ">
+<div class="row">
+   
+    <h3  style="text-align: center; top:20%;position: relative;">Everyday survivor kit</h3>
+    
+    <br>
+  <br>
+<div  id="lastcard"> 
+ <img id="bulb_icon" src="img/bulb.png"/>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  Congratulations! You are now 2% finn! </div></p>
+  <br><br>
+  <div class="row" style=" position: fixed; top:90%;" >
+  <div class="col-xs-6"> <a href="login.html" data-ajax="false"><img src="img/save_btn.png"  id="intro_save_btn"  style="width:110px; height:30px; position: fixed;left: 10%;" /></a>
+  </div>
+  <div class="col-xs-6"> <a href="icon.html" data-ajax="false"> <img src="img/continue_every_btn.png" id="intro_conti_btn" style="width:110px; height:30px;  left:55%; float: right; position: fixed; "/></a>
+  </div>
+  </div>
+</div>
+ 
+</div>
+
+ <!-- *************** lesson 2 ******************* -->
+
+
+ <div id="e02" data-role="page" class="slideshow bg" >
+     
+    <div class="card-bgg">
+     
+      <div class="card-bg" style="  background-image:url(img/1_Forest_and_view_from_hill.jpg);" >  </div> 
+       <div class="card-bg" style="  background-image:url(img/1_Forest_and_view_from_hill.jpg);"></div>
+       <div class="card-bg" style="  background-image:url(img/3-4_punkki.jpg);" ></div>
+       <div class="card-bg" style="  background-image:url(img/3-4_punkki.jpg);" ></div>
+      <div  class="card-bg" style="  background-image:url(img/5_winter.jpg);" ></div>
+      <div class="card-bg" style="  background-image:url(img/6_don’t_hesitate_for_help.jpeg);"></div>
+      <div class="card-bg" style="  background-image:url(img/8_Winter_Blue.JPG);" > </div>
+      <div class="card-bg" style="  background-image:url(img/3_Freezing_cold.jpg);"></div>
+                 
+      
+    <div class="row">
+    <div class="col-xs-2">
+       <a href="icon.html" data-ajax="false"> 
+       <span id="closerModel" class="close" title="Close Model">&times;</span></a>
+       </div>
+  <div class="col-xs-10"  >
+       <div id= "mybar"></div>
+       <progress value="0.5" max="100" id="p4" class="progressbar0" style="background-color: #99ff99;" ></progress>
+        <p onclick="incr4()"></p> 
+ </div>
+
+ </div>
+ <div class="row">
+   <div class="col-xs-6 person"><img src="img/person_everyday.png"></div>
+   <div class="col-xs-6 fox"><img src="img/foxldpi.png"></div>
+ </div>
+</div>
+ <div class="row">
+   <div class="col-xs-12">
+     <br>
+     <div class="box mySlides"><p>Finland is safe – so relax. <br>You have landed probably one of the safest places in the world.   
+</p></div>
+
+
+  <div class="box mySlides"><p>There are no dangerous animals. <br>The streets are quite, hardly any pollution, food and water is <br>clean.
+  </p></div>
+
+
+  <div class="box mySlides"><p><b><div style="text-align: center;">Punkki!</b></div>
+Well actually there is one thing to aware. <br>The most dangerous animal is the tick (”Punkki”). <br>Small, blood sucking insect that carries for example the Lyme disease. 
+</p></div>
+
+
+  <div class="box mySlides"><p>It appears during the summer and usually lives at the ground in the vegetation. <br>You should wear long pants while walking in the forest and longer grass. <br>Make sure to check your body at evening in case it has bitten. </div>
+
+
+  <div class="box mySlides"><p>But during winter your safe.<br> How lucky we are to have whole land frozen half the year!</div>
+
+  <div class="box mySlides"><p>Finns might enjoy silence but most of them really like to help foreigners in need.<br>Finns talk surprisingly good English. <br>So don’t hesitate to ask for help.
+</p></div>
+
+
+  <div class="box mySlides"><p>Yep, It's freezing out there. Or wet. <br>Probably both During winter the temperature might go low as -30C. <br>The key is to wear clothes in many layers<br>(in Finnish: ’kerrospukeutuminen’).
+</p></div>
+
+</div>
+</div> 
+
+<a class="continue" id="continue01" onclick="todo()"><img src="img/continue_btnldpi.png" width="130px"; height="30px"/></a>
+<audio id="audio_click" src="img/pickup.wav" ></audio>
+
+  <div class="box mySlides"><p>So wearing 3 pants on top of each other is just OK. <br>Remember to buy good beanie or woolly hat.</p>
+  
+
+  <div class="col-xs-12"><a href="#page003" data-ajax="false"> <img src="img/continue_btnldpi.png" id="result_continue_btn" /></a>
+  <br>
+  <br>
+</div>
+</div>
+</div>
+   
+
+        
+<div data-role="page" id="page003" style="background-color: white; ">
+<div class="row">
+   
+    <h3  style="text-align: center; top:20%;position: relative;">Everyday survivor kit</h3>
+    
+    <br>
+  <br>
+<div  id="lastcard"> 
+ <img id="bulb_icon" src="img/bulb.png"/>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  Congratulations! You are now 4% finn! </div></p>
+  <br><br>
+  <div class="row" style=" position: fixed; top:90%;" >
+  <div class="col-xs-6"> <a href="login.html" data-ajax="false"><img src="img/save_btn.png"  id="intro_save_btn"  style="width:110px; height:30px; position: fixed;left: 10%;" /></a>
+  </div>
+  <div class="col-xs-6"> <a href="icon.html" data-ajax="false"> <img src="img/continue_btnldpi.png" id="intro_conti_btn" style="width:110px; height:30px;  left:55%; float: right; position: fixed; "/></a>
+  </div>
+  </div>
+</div>
+ 
+</div>
+
 <script type="text/javascript" src="cordova.js"></script>
   
     <script type="text/javascript" src="js/main.js"></script>

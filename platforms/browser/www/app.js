@@ -7,7 +7,7 @@
     /* processData:false why do you need this? */
     /* I can see the code behind this $interval */
         console.log("triggering post");
-        $http({method:"post", url:"http://localhost:5500", data:studentinfo})
+        $http({method:"post", url:"http://localhost:5000", data:studentinfo})
             .then(function(data){
                 /* Success callback */
                 console.log("success");

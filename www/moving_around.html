@@ -28,16 +28,173 @@
 <body>
     <!--***********************************************-->
                        <!-- classes-1/ -food-->
-<!-- <div id="lesson1" data-role="page" ><img src="../img/lesson.png" style="height: 50%; width: 100%;" onclick="document.getElementById('m01').style.display='block'"/></div>
-<div class="footer"></div> -->
+<div id="lesson_food" data-role="page"  class="lesson_bg_movingaround">
+      
+     <div id="lesson_title">
+        <a href="icon.html" data-ajax="false"> 
+       <span ><h4 style="margin:40px;">&#8592; Moving around</h4></span></a>
+       </div>
+
+
+<div class="bg_lessonbox">
+
+   <div class="box_square" > 
+   <div class="row"><p><b><div style="text-align: center;">Lesson 1/4</div></b> <br>In this lesson you will<br> learn the basics of<br> how to move from place<br> A to B in Finland <br>(as cheap as possible)<br><br>Length of the lesson: 2 min</p>
+   </div>
+   
+    <a href="#m01" data-ajax="false"> <img src="img/select_btn_movingaround.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+    </div>
+    
+
+    <div class="box_square" > 
+    <div class="row"><p><b><div style="text-align: center;">Lesson 2/4</div></b> <br>Sorry! this features is <br> coming soon.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <a href="" data-ajax="false"> <img src="img/select_btn_movingaround.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+    </div>
+    <div class="box_square" > 
+    <div class="row"><p><b><div style="text-align: center;">Lesson 3/4</div></b> <br>Sorry! this features is <br> coming soon.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <a href="" data-ajax="false"> <img src="img/select_btn_movingaround.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+    </div>
+
+    <div class="box_square" > 
+    <div class="row"><p><b><div style="text-align: center;">Lesson 4/4</div></b> <br>Sorry! this features is <br> coming soon.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br><br>
+     <a href="" data-ajax="false"> <img src="img/select_btn_movingaround.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+     </div>
+
+</div>
+
+</div>
+
+
     <div id="m01" data-role="page" class="slideshow bg" >
-    <div class="card-bg05">
+     <div class="card-bgg">
+     
+  <div class="card-bg " style="  background-image:url(img/onnibus.jpg);" >  </div> 
+   <div class="card-bg " style="  background-image:url(img/carpool.jpg);"></div>
+   <div class="card-bg " style="  background-image:url(img/Hitchhike.jpg);" ></div>
+   <div class="card-bg " style="  background-image:url(img/Hitchhike.jpg);" ></div>
+    <div  class="card-bg " style="  background-image:url(img/road.jpg);" ></div>
+    <div class="card-bg " style="  background-image:url(img/speed_limit.jpg);"></div>
+      <div class="card-bg " style="  background-image:url(img/childseat.jpg);" > </div>
+       <div class="card-bg " style="  background-image:url(img/Bike.jpg);"></div>
     <div class="row ">
     <div class="col-xs-2">
        <a href="icon.html" data-ajax="false"> 
        <span id="closerModel" class="close" title="Close Model">&times;</span></a>
        </div>
-  <div class="col-xs-10"  >
+  <div class="col-xs-10">
+       <progress value="0.5" max="100" id="p0" class="progressbar0" />
+       
+        <p onclick="incr()"></p> 
+ </div>
+
+ </div>
+ <div class="row">
+   <div class="col-xs-6 person"><img src="img/person_ma.png"></div>
+   <div class="col-xs-6 fox"><img src="img/foxldpi.png"></div>
+ </div>
+</div>
+ <div class="row">
+   <div class="col-xs-12">
+     <br>
+     <div class="box mySlides"><p>Cheapest way to travel between cities are buses. <br><br>Trains are faster but more expensive.</p></div>
+
+
+    <div class="box mySlides"><p>There are cheap carpool options available in internet.<br><br> Currently popular and easy option is Facebooks different carpool groups.<br><br>Trips from Jyväskylä to Helsinki cost about 15 euros.</p></div>
+
+
+    <div class="box mySlides"><p><b><div style="text-align: center;">Hitch hiking in Finland?  1/2</div></b> It’s very safe to hitch hike in Finland but it’s not that easy.<br><br>Few reasons: there are not many cars and people are a bit afraid to pick up stranger (although they would like to), the weather is usually bad.</p>
+    </div>
+
+
+    <div class="box mySlides"><p><b><div style="text-align: center;">Hitchhiking in Finland?  2/2</div></b><br>But if you choose to try it, best option is to head for big gas stations outside city center (usually ABC).<br><br>This works better than just standing on the road.</p></div>
+
+
+    <div class="box mySlides"><p>Traveling with your own car?<br><br>Roads are in good shape and there isn’t hardly ever any traffic.<br> So traveling with your own car is fast. </p></div>
+
+
+    <div class="box mySlides"><p>Speed limits in side city area are usually around 40-50 km/h and on the highway between 80-120.<br><br/>During winter the limits are lower for safety reasons.</p></div>
+     
+     <div class="box mySlides"><p>Child seat is mandatory in cars by the law.</p></div>
+     </div>
+</div> 
+ <a class="continue" id="continue01" onclick="todo_3()"><img src="img/continue_mv_ar_btn.png" width="130px"; height="30px"></a>
+ <audio id="audio_click" src="img/pickup.wav" ></audio>
+
+    <div class="box mySlides"><p>Bicycles are great way getting around in city. <br><br> Finland is no where near Denmark but it’s getting more and more bike-friendly.<br><br> So first thing to do is to find a cheap bikeshop.</p>
+
+<div class="col-xs-12"><a href="#page05" data-ajax="false"> <img src="img/continue_mv_ar_btn.png" id="result_continue_btn"/></a>
+  <br>
+  <br>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="page05" style="background-color: white; ">
+<div class="row">
+   
+    <h3  style="text-align: center; top:20%;position: relative;">Moving around</h3>
+    
+    <br>
+  <br>
+<div  id="lastcard"> 
+ <img id="bulb_icon" src="img/bulb.png"/>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  Congratulations! You are now 10% finn! </div></p>
+  <br><br>
+  <div class="row" style=" position: fixed; top:90%;">
+  <div class="col-xs-6"> <a href="login.html" data-ajax="false"><img src="img/save_btn.png"  id="intro_save_btn"  style="width:110px; height:30px; position: fixed;left: 10%;" /></a>
+  </div>
+  <div class="col-xs-6"> <a href="icon.html" data-ajax="false"> <img src="img/continue_mv_ar_btn.png" id="intro_conti_btn" style="width:110px; height:30px;  left:55%; float: right; position: fixed; "/></a>
+  </div>
+  </div>
+</div>
+ 
+</div>
+
+
+   <!-- *******************************  lesson2  ******************* -->
+
+   <div id="m02" data-role="page" class="slideshow bg" >
+     <div class="card-bgg">
+     
+  <div class="card-bg " style="  background-image:url(img/onnibus.jpg);" >  </div> 
+   <div class="card-bg " style="  background-image:url(img/carpool.jpg);"></div>
+   <div class="card-bg " style="  background-image:url(img/3_Freezing_cold.jpg);" ></div>
+   <div class="card-bg " style="  background-image:url(img/4_Tap_water.jpg);" ></div>
+    <div  class="card-bg " style="  background-image:url(img/5_112_hätänumero_logo.jpg);" ></div>
+    <div class="card-bg " style="  background-image:url(img/6_Police_car.jpg);"></div>
+      <div class="card-bg " style="  background-image:url(img/7_R-Kioski.jpg);" > </div>
+       <div class="card-bg " style="  background-image:url(img/8_EVERYDAY_Vitamin_D.jpg);"></div>
+    <div class="row ">
+    <div class="col-xs-2">
+       <a href="icon.html" data-ajax="false"> 
+       <span id="closerModel" class="close" title="Close Model">&times;</span></a>
+       </div>
+  <div class="col-xs-10">
        <div id= "mybar"></div>
        <progress value="0.5" max="100" id="p0" class="progressbar0" ></progress>
         <p onclick="incr0()"></p> 
@@ -45,52 +202,74 @@
 
  </div>
  <div class="row">
-   <div class="col-xs-6 person"><img src="img/male_icon.png"></div>
+   <div class="col-xs-6 person"><img src="img/person_ma.png"></div>
    <div class="col-xs-6 fox"><img src="img/foxldpi.png"></div>
  </div>
-
+</div>
  <div class="row">
    <div class="col-xs-12">
      <br>
-     <div class="box mySlides"><p>Cheapest way to travel between cities are buses. <br/>Trains are faster but more expensive.</p></div>
+     <div class="box mySlides"><p>Cheapest way to travel between cities are buses. <br><br>Trains are faster but more expensive.</p></div>
 
 
-    <div class="box mySlides"><p>There are cheap carpool options available in internet.<br/> Currently popular and easy option is Facebooks different carpool groups.   <br/>Trips from Jyväskylä to Helsinki cost about 15 euros.</p></div>
+    <div class="box mySlides"><p>There are cheap carpool options available in internet.<br><br> Currently popular and easy option is Facebooks different carpool groups.<br>   <br><br>Trips from Jyväskylä to Helsinki cost about 15 euros.</p></div>
 
 
-    <div class="box mySlides"><p><b> 1/2   </b><br/>Hitchhiking in Finland? It’s very safe to hitchhike in Finland but it’s not that easy.   <br/>Few reasons: there are not many cars and people are a bit afraid to pick up stranger (although they would like to), the weather is usually bad.</p>
+    <div class="box mySlides"><p><b><div style="text-align: center;">Hitch hiking in Finland?  1/2   </div></b> It’s very safe to hitch hike in Finland but it’s not that easy.<br>   <br/>Few reasons: there are not many cars and people are a bit afraid to pick up stranger (although they would like to), the weather is usually bad.</p>
     </div>
 
 
-    <div class="box mySlides"><p><b> 2/2   </b><br/>Hitchhiking in Finland? But if you choose to try it, best option is to head for big gas stations outside city center (usually ABC).   <br/>This works better than just standing on the road.</p></div>
+    <div class="box mySlides"><p><b><div style="text-align: center;">Hitchhiking in Finland?  2/2   </div></b> <br>But if you choose to try it, best option is to head for big gas stations outside city center (usually ABC).   <br><br>This works better than just standing on the road.</p></div>
 
 
-    <div class="box mySlides"><p>Traveling with your own car  Roads are in good shape and there isn’t hardly ever any traffic.<br/> So traveling with your own car is fast. </p></div>
+    <div class="box mySlides"><p>Traveling with your own car  ? <br><br>Roads are in good shape and there isn’t hardly ever any traffic.<br> So traveling with your own car is fast. </p></div>
 
 
-    <div class="box mySlides"><p>Speed limits in side city area are usually around 40-50 km/h and on the highway between 80-120.   <br/>During winter the limits are lower for safety reasons.</p></div>
+    <div class="box mySlides"><p>Speed limits in side city area are usually around 40-50 km/h and on the highway between 80-120.   <br><br/>During winter the limits are lower for safety reasons.</p></div>
      
      <div class="box mySlides"><p>Child seat is mandatory in cars by the law.</p></div>
      </div>
 </div> 
  <a class="continue" id="continue01" onclick="todo_3()"><img src="img/continue_btnldpi.png" width="130px"; height="30px"></a>
- <audio id="audio" src="img/pickup.wav" ></audio>
+ <audio id="audio_click" src="img/pickup.wav" ></audio>
 
-    <div class="box mySlides"><p>Bicycles are great way getting around in city. <br>
+    <div class="box mySlides"><p>Bicycles are great way getting around in city. <br><br> Finland is no where near Denmark but it’s getting more and more bike-friendly.<br><br> So first thing to do is to find a cheap bikeshop.</p>
 
-Finland is no where near Denmark but it’s getting more and more bike-friendly.<br>
- So first thing to do is to find a cheap bikeshop.</p>
-
-<div class="col-xs-12"><a href="result_mov_around.html" data-ajax="false"> <img src="img/continue_btnldpi.png" id="result_continue_btn"/></a>
+<div class="col-xs-12"><a href="#page05" data-ajax="false"> <img src="img/continue_btnldpi.png" id="result_continue_btn"/></a>
   <br>
   <br>
 </div>
 </div>
-</div></div>
+</div>
 
 
+<div data-role="page" id="page05" style="background-color: white; ">
+<div class="row">
    
-<div class="footer"> </div>
+    <h3  style="text-align: center; top:20%;position: relative;">Moving around</h3>
+    
+    <br>
+  <br>
+<div  id="lastcard"> 
+ <img id="bulb_icon" src="img/bulb.png"/>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  Congratulations! You are now 10% finn! </div></p>
+  <br><br>
+  <div class="row" style=" position: fixed; top:90%;">
+  <div class="col-xs-6"> <a href="login.html" data-ajax="false"><img src="img/save_btn.png"  id="intro_save_btn"  style="width:110px; height:30px; position: fixed;left: 10%;" /></a>
+  </div>
+  <div class="col-xs-6"> <a href="icon.html" data-ajax="false"> <img src="img/continue_mv_ar_btn.png" id="intro_conti_btn" style="width:110px; height:30px;  left:55%; float: right; position: fixed; "/></a>
+  </div>
+  </div>
+</div>
+ 
+</div>
+   
+
 <script type="text/javascript" src="cordova.js"></script>
   
     <script type="text/javascript" src="js/main.js"></script>

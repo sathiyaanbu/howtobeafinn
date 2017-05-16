@@ -29,8 +29,21 @@
     <!--***********************************************-->
                        <!-- classes-1/ -introduction-->
 
-<!-- <div id="lesson1" data-role="page" ><img src="../img/lesson.png" style="height: 50%; width: 100%;" onclick="document.getElementById('q01').style.display='block'"/></div>
-<div class="footer"></div> -->
+<div id="lesson_quiz" data-role="page"  class="lesson_bg_quiz">
+<div id="bg_lessonbox"> 
+<div id="lesson_title">
+<a href="icon.html" data-ajax="false"> 
+       <span ><h5 style="margin:30px; color: white;">&#8592; Quiz</h5></span></a>
+       </div>
+   <div class="box_square_quiz" style="padding: 40px; " > 
+   <div class="row"><p >Here’s a little test that makes sure you have really learned the essentials.</p>
+   </div>
+   <br><br><br>
+    <a href="#q01" data-ajax="false"> <img src="img/select_btn_quiz.png" width="100px"; height="30px"; vertical-align="middle";/>
+     </a>
+</div></div>
+</div>
+
     <div id="q01" data-role="page" class="slideshow bg" >
     <div class="card-bg07">
     <div class="row ">
@@ -40,13 +53,13 @@
        </div>
   <div class="col-xs-10"  >
        <div id= "mybar"></div>
-       <progress value="0.5" max="100" id="p2" class="progressbar0" ></progress>
+       <progress value="0.5" max="100" id="p2"  ></progress>
         <p onclick="incr2()"></p> 
  </div>
 
  </div>
  <div class="row">
-   <div class="col-xs-6 person"><img src="img/male_icon.png"></div>
+   <div class="col-xs-6 person"><img src="img/men_quiz.png"></div>
    <div class="col-xs-6 fox"><img src="img/foxldpi.png"></div>
  </div>
 
@@ -54,8 +67,7 @@
    <div class="col-xs-12">
      
       <div class="box mySlides"  id="quiz01">
-        <p class="question">1. What is the emergency
-telephone number?</p>
+        <p class="question">1. What is the emergency telephone number?</p>
         <ul>
         <input class="answer" type="radio" name="q1" value="1">
           <label id="correctString1">112</label>
@@ -69,8 +81,7 @@ telephone number?</p>
       </div>
     
       <div class="box mySlides" id="quiz01">
-        <p class="question">2. You need a prepaid sim-card
-for your mobile phone. Where
+        <p class="question">2. You need a prepaid sim-card for your mobile phone. Where
 to buy it?</p>
         <ul>
           <input class="answer" type="radio" name="q2" value="0">
@@ -85,17 +96,14 @@ to buy it?</p>
       </div>
     
       <div class="box mySlides" id="quiz01">
-        <p class="question">3. You are thirsty, is it safe to
-drink tap water?</p>
+        <p class="question">3. You are thirsty, is it safe to drink tap water?</p>
         <ul>
           <input class="answer" type="radio" name="q3" value="0">
           <label>Yes, if you boil it first</label>
           <input class="answer" type="radio" name="q3" value="1">
-          <label id="correctString3">Yes. Tap water is totally
-clean and ecological</label>
+          <label id="correctString3">Yes. Tap water is totally clean and ecological</label>
           <input class="answer" type="radio" name="q3" value="0">
-          <label>No. It’s better drink bottled
-water</label>
+          <label>No. It’s better drink bottled water</label>
           <input class="answer" type="radio" name="q3" value="0">
           <label>No. you should not drink</label>
         </ul>
@@ -115,12 +123,11 @@ water</label>
     </div>
     <br>
     <br>
-     <a class="continue" id="continue01" onclick="todo_4()"><img src="img/continue_btnldpi.png" width="130px" height="30px"/></a>
-     <audio id="audio" src="img/pickup.wav" ></audio>
+     <a class="continue" id="continue01" onclick="todo_4()"><img src="img/continue_quiz_btn.png" width="130px" height="30px"/></a>
+     <audio id="audio_click" src="img/pickup.wav" ></audio>
 
       <div class="box mySlides" id="quiz01">
-        <p class="question">5. You meet a Finnish person.
-How do you greet her/him?</p>
+        <p class="question">5. You meet a Finnish person. How do you greet her/him?</p>
         <ul>
           <input class="answer" type="radio" name="q5" value="0">
           <label>Kisses on both cheeks</label>
@@ -135,26 +142,30 @@ How do you greet her/him?</p>
 
    <div class="submitter" id="sub" onclick="document.getElementById('s01')">
          <input class="quizSubmit" id="submitButton"  onclick="bothfn()"
-          type="submit" value="Submit"   /><audio id="audio1" src="img/lifeup.wav" ></audio>
+          type="submit" value="Submit"/>
+          <audio id="audio1" src="img/lifeup.wav" ></audio>
     </div>
 
   </div>
  
    
         <!--show only wrong answers on submit-->
+
 <div id="s01" class="box mySlides" >
     <div class="quizAnswers" id="112"></div>
       <div class="quizAnswers" id="R-kioski"></div>
     <div class="quizAnswers" id="Yes. Tap water is totally clean and ecological"></div>
     <div class="quizAnswers" id="Coffee"></div>
      <div class="quizAnswers" id="Firm hand shake"></div>
+
        <!--show score upon submit-->
+
     <div > <h4 class="quizScore" id="userScore"></h4>
 
     Please give us your feedback!<a href= "https://docs.google.com/forms/d/e/1FAIpQLSckTj6MhnZi6iq5XU9uqShqsMrDZVJMhDoXKhaCUk06Q2ZiQQ/viewform?c=0&w=1" rel="external">CLICK HERE!</a>
     </div>
  <div class="row">
- <div class="col-xs-12"><a href="icon.html" data-ajax="false"> <img src="img/continue_btnldpi.png" id="result_continue_btn" /></a>
+ <div class="col-xs-12"><a href="icon.html" data-ajax="false"> <img src="img/continue_quiz_btn.png" id="result_continue_btn" /></a>
   <br>
    
   </div>
@@ -164,7 +175,7 @@ How do you greet her/him?</p>
 
   </div> 
   </div>   </div>   
-<div class="footer"> </div>
+
 <script type="text/javascript" src="cordova.js"></script>
   
     <script type="text/javascript" src="js/main.js"></script>

@@ -7,82 +7,84 @@ setTimeout(function() {
 
 
 //--------------------------------------introduction----------------------------------
+function play(){
+       var audio = document.getElementById("audio_click");
+       audio.play();
+                 }
+
+
 var slideIndex_0 = 1;
-var slideIndex_1 = 1;
-var slideIndex_2 = 1;
+
 var slideIndex_3 = 1;
 var slideIndex_4 = 1;
 var slideIndex_5 = 1;
-var slideIndex_6 = 1;
+var slideIndex_7 = 1;
 
 showSlides_0(slideIndex_0);
-showSlides_1(slideIndex_1);
-showSlides_2(slideIndex_2);
 showSlides_3(slideIndex_3);
 showSlides_4(slideIndex_4);
 showSlides_5(slideIndex_5);
-showSlides_6(slideIndex_6);
+ showSlides_7(slideIndex_7);
+ function plusSlides_7(s) {
+  showSlides_7(slideIndex_7 += s);
+}  
+
+function showSlides_7(s) {
+  var i0;
+  var slides_0 = document.getElementsByClassName("card-bg ");
+  
+  for (i0 = 0; i0 <= 5; i0++) {
+    slides_0[i0].style.display = "none";  
+  slides_0[slideIndex_7-1].style.display = "block";
+ 
+ }
+
+} 
 
 function plusSlides_0(s) {
   showSlides_0(slideIndex_0 += s);
 }
-function plusSlides_2(s) {
-  showSlides_0(slideIndex_2 += s);
-}
-function plusSlides_1(s) {
-  showSlides_1(slideIndex_1 += s);
-}
+function showSlides_0(s) {
+  var i;
+  var slides = document.getElementsByClassName("box mySlides");
+  
+  for (i = 0; i < 6; i++) {
+    slides[i].style.display = "none";  
+  slides[slideIndex_0-1].style.display = "block";
+ 
+ }
+
+}  
+
 function plusSlides_5(s) {
   showSlides_5(slideIndex_5 += s);
 }
-function plusSlides_6(s) {
-  showSlides_6(slideIndex_6 += s);
-}
-   
-  function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-
+ 
 function showSlides_5(s) {
   var i0;
   var slides_0 = document.getElementsByClassName("card-bg ");
   
   for (i0 = 0; i0 <= 7; i0++) {
     slides_0[i0].style.display = "none";  
-
   slides_0[slideIndex_5-1].style.display = "block";
  
  }
 
 }  
+function plusSlides_4(s) {
+  showSlides_4(slideIndex_4 += s);
+}
 
-function showSlides_6(s) {
-  var i0;
-  var slides_0 = document.getElementsByClassName("card-bg ");
-  
-  for (i0 = 0; i0 <= 13; i0++) {
-    slides_0[i0].style.display = "none";  
-
-  slides_0[slideIndex_6-1].style.display = "block";
- 
- }
-
-}  
-
-
-function showSlides_0(s) {
+function showSlides_4(s) {
   var i0;
   var slides_0 = document.getElementsByClassName("box mySlides");
   
-  for (i0 = 0; i0 <= 7; i0++) {
-    slides_0[i0].style.display = "none";  
-
-  slides_0[slideIndex_0-1].style.display = "block";
+  for (i0 = 0; i0 <=5; i0++) {
+    slides_0[i0].style.display = "none";
+  slides_0[slideIndex_4-1].style.display = "block";
  
  }
-
-}  
+} 
 
 
 function plusSlides_3(s) {
@@ -93,139 +95,47 @@ function showSlides_3(s) {
   var i0;
   var slides_0 = document.getElementsByClassName("box mySlides");
   
-  for (i0 = 0; i0 <= 7; i0++) {
+  for (i0 = 0; i0 <8; i0++) {
 
     slides_0[i0].style.display = "none";  
-
-
   slides_0[slideIndex_3-1].style.display = "block";
  
  }
 
-}  
-
-function showSlides(s) {
-  var i;
-  var slides = document.getElementsByClassName("box mySlides");
-  
-  for (i = 0; i <= 7; i++) {
-    slides[i].style.display = "none";  
-
-  slides[slideIndex-1].style.display = "block";
- 
- }
-
-}  
-
-
-function showSlides_1(s) {
-  var i0;
-  var slides_0 = document.getElementsByClassName("box mySlides");
-  
-  for (i0 = 0; i0 < 6; i0++) {
-    slides_0[i0].style.display = "none";  
-
-   
-  slides_0[slideIndex_1-1].style.display = "block";
- }
-}  
-
-
-function plusSlides_2(s) {
-  showSlides_2(slideIndex_2 += s);
 }
 
-function showSlides_2(s) {
-  var i0;
-  var slides_0 = document.getElementsByClassName("box mySlides");
-  
-  for (i0 = 0; i0 < 14; i0++) {
-    slides_0[i0].style.display = "none";  
-
-   
-  slides_0[slideIndex_2-1].style.display = "block";
- }
-
-}  
 
 
-function plusSlides_4(s) {
-  showSlides_4(slideIndex_4 += s);
-}
+function incr() { 
 
-function showSlides_4(s) {
-  var i0;
-  var slides_0 = document.getElementsByClassName("box mySlides");
-  
-  for (i0 = 0; i0 <= 5; i0++) {
-
-    slides_0[i0].style.display = "none";  
-
-
-  slides_0[slideIndex_4-1].style.display = "block";
- 
- }
-
-}  
-
-
-function incr0() { 
 var v0=document.getElementById('p0').value;
 
-document.getElementById("p0").value= v0 + 14.2;
-   }
-
-function incr1() { 
-var v1=document.getElementById('p1').value;
-
-document.getElementById("p1").value= v1 + 7.84;
+document.getElementById("p0").value= v0 + 14.4;
    }
 
    function incr2() { 
+
 var v1=document.getElementById('p2').value;
 
 document.getElementById("p2").value= v1 + 20.00;
    }
 
-
 function todo_0(){
-     // plusSlides_5(1);
+      plusSlides_7(1);
     plusSlides_0(1);  
-    incr0();
     play();
 
     }
-
-function todo_1(){
-     play(); 
-    plusSlides_1(1);  
-    incr2();
-    }
-
-function todo(){
-     play(); 
-    plusSlides_0(1);  
-    incr0();
-    }
-
-    function todo_2(){
-     // plusSlides_6(1);   
-    plusSlides_2(1);  
-    incr1();
-    play();
-    }
-
-
-    function todo_3(){
-      
+function todo_3(){
+      plusSlides_5(1);
     plusSlides_3(1);  
-    incr0();
+    incr();
     play();
     }
-function todo_4(){
-      
-    plusSlides_4(1);  
+
+function todo_4(){  
     incr2();
+    plusSlides_4(1);
     play();
     }
 
@@ -233,9 +143,7 @@ function todo_4(){
 //  ----------------------------quiz----------------------------------------
 
     function submitQuiz() {
-      alert('submitted and tap continue');
-
-
+     
     // get each answer score
         function answerScore (qName) {
             var radiosNo = document.getElementsByName(qName);
