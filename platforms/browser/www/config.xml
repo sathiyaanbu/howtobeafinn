@@ -6,7 +6,7 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>Howtobeafinn</name>
+    <name>How to be a finn</name>
     <description>
         How to be a finn game application.
     </description>
@@ -24,5 +24,4 @@
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 </widget>

@@ -19,12 +19,14 @@ var slideIndex_3 = 1;
 var slideIndex_4 = 1;
 var slideIndex_5 = 1;
 var slideIndex_7 = 1;
-
+var slideIndex_8 = 1;
+var slideIndex_9 = 1;
 showSlides_0(slideIndex_0);
 showSlides_3(slideIndex_3);
 showSlides_4(slideIndex_4);
 showSlides_5(slideIndex_5);
  showSlides_7(slideIndex_7);
+showSlides_9(slideIndex_9);
  function plusSlides_7(s) {
   showSlides_7(slideIndex_7 += s);
 }  
@@ -41,6 +43,36 @@ function showSlides_7(s) {
 
 } 
 
+showSlides_8(slideIndex_8);
+function plusSlides_8(s) {
+  showSlides_8(slideIndex_8 += s);
+}
+function showSlides_8(s) {
+  var i;
+  var slides = document.getElementsByClassName("box mySlides1");
+  
+  for (i = 0; i < 8; i++) {
+    slides[i].style.display = "none";  
+  slides[slideIndex_8-1].style.display = "block";
+ 
+ }
+
+}  
+
+function plusSlides_9(s) {
+  showSlides_9(slideIndex_9 += s);
+}
+function showSlides_9(s) {
+  var i0;
+  var slides_0 = document.getElementsByClassName("card-bg1");
+  
+  for (i0 = 0; i0 < 8; i0++) {
+    slides_0[i0].style.display = "none";  
+  slides_0[slideIndex_9-1].style.display = "block";
+ 
+ }
+
+}  
 function plusSlides_0(s) {
   showSlides_0(slideIndex_0 += s);
 }
@@ -112,6 +144,12 @@ var v0=document.getElementById('p0').value;
 
 document.getElementById("p0").value= v0 + 14.4;
    }
+   function incr1() { 
+
+var v2=document.getElementById('p1').value;
+
+document.getElementById("p1").value= v2 + 14.4;
+   }
 
    function incr2() { 
 
@@ -121,15 +159,21 @@ document.getElementById("p2").value= v1 + 20.00;
    }
 
 function todo_0(){
-      plusSlides_7(1);
+    plusSlides_7(1);
     plusSlides_0(1);  
     play();
 
     }
 function todo_3(){
-      plusSlides_5(1);
+    plusSlides_5(1);
     plusSlides_3(1);  
     incr();
+    play();
+    }
+function todo_5(){
+    incr1();
+    plusSlides_9(1);
+    plusSlides_8(1);  
     play();
     }
 

@@ -259,6 +259,19 @@ padding: 5px;
     z-index: -1;
     margin: 0px !important;
 }
+.card-bg1{
+  -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+   position: absolute;    
+  width:100%; 
+  top: 0; 
+   left: 0;
+   background-size: cover;
+    height:200px;
+    z-index: -1;
+    margin: 0px !important;
+}
 
 .card-bgg{
  
@@ -290,14 +303,13 @@ left: 0;
 
 progress {
   margin:40px 5px 5px 0px; 
-  color: #81ea8d;
-  background-color: #81ea8d !important;
+ 
  border-radius: 10px;
   height:5px !important;
-  width:95%;  
+  width:95%;
+  background-color: #ffffff !important;  
   opacity: 80;
-  
-  position: relative;
+   
     /*border: 0px solid #cc99ff;
     border-radius: 4px;
     width: 100%;
@@ -307,16 +319,16 @@ progress {
     opacity: 80;*/
 }
  
-.progress{
+  .progress{
 margin:40px 5px 5px 0px; 
-  color: #81ea8d;
-  background-color: #81ea8d !important;
+ color: #81ea8d !important;
+ 
  border-radius: 10px;
   height:5px !important;
-  width:95%;  
+  width:95%;
+   background-color: #ffffff !important;   
   opacity: 80;
-  
-  position: relative;
+   
   
 }
  
@@ -498,10 +510,11 @@ ul label{
 width: 50%;
 position: relative;
 left: 25%;
-background-color: orange;
+background-color: #f2667e;
 border-radius: 15px;
 color: white;
 text-align: center;
+border-width: 0px;
 
 }
 
