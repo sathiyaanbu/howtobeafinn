@@ -5,7 +5,7 @@
         How to be a finn game application.
     </description>
     <author email="how2beafinn@gmail.com" href="http://howtobeafinn.fi">
-       Howtobeafinn Team
+       How to be a finn Team
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-6.5.0" />
