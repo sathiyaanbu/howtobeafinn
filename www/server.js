@@ -342,4 +342,6 @@ connection.query(selectString1, function(err, results) {
 });
 });
 
-app.listen(5500);
+app.listen(process.env.PORT || 5500, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
