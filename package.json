@@ -1,12 +1,12 @@
 {
-  "name": "Howtobeafinn",
-  "version": "1.2.0",
+  "name": "howtobeafinn",
+  "version": "1.0.0",
   "description": "Howtobeafinn game app",
- "main": "app.js",
- "scripts":{
-  "start": "node server.js"
-},
-"dependencies": {
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
      "angular-route": "^1.4.8",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
@@ -16,8 +16,10 @@
     "multer": "^1.3.0",
     "mysql": "^2.11.1",
     "node-mysql": "^0.4.2",
+    "nodemailer":"^4.0.1",
     "should": "^11.2.1",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "session":"^0.1.0"
 
   },
   "devDependencies": {
@@ -25,19 +27,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sathiyaanbu/howtobeafinn.git"
+    "url": "git+https://github.com/sathiyaanbu/howtobeafinn.git"
   },
-  "engines": {
-      "node": "6.9.4"
-  },
+  "keywords": [
+    "node"
+  ],
   "author": "Howtobeafinn Team",
   "license": "Apache-2.0",
-  "keywords": [
-    "ecosystem:phonegap",
-    "ecosystem:cordova",
-    "node",
-    "heroku"
-  ],
-  
-  "homepage": "https://github.com/sathiyaanbu/howtobeafinn.git"
+  "bugs": {
+    "url": "https://github.com/sathiyaanbu/howtobeafinn/issues"
+  },
+  "homepage": "https://github.com/sathiyaanbu/howtobeafinn#readme"
 }

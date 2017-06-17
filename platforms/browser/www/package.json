@@ -1,0 +1,30 @@
+{
+  "name": "howtobeafinn",
+  "version": "1.0.0",
+  "description": "Howtobeafinn game app",
+  "main": "app.js",
+  "dependencies": {
+    "mysql": "^2.13.0",
+    "node": "^0.0.0",
+    "node.js": "^0.0.0",
+    "nodemailer": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathiyaanbu/howtobeafinn.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Howtobeafinn Team",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sathiyaanbu/howtobeafinn/issues"
+  },
+  "homepage": "https://github.com/sathiyaanbu/howtobeafinn#readme"
+}

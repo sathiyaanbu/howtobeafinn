@@ -7,27 +7,70 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
         "cordova-plugin-camera": {
-            "PACKAGE_NAME": "fi.how2beafinn.org"
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "fi.htbaf.app"
         },
         "cordova-plugin-device-motion": {
-            "PACKAGE_NAME": "fi.how2beafinn.org"
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "fi.htbaf.app"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "fi.how2beafinn.org"
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "fi.htbaf.app"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "fi.how2beafinn.org"
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "fi.htbaf.app"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "fi.how2beafinn.org"
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "fi.htbaf.app"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "fi.how2beafinn.org"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "fi.how2beafinn.org"
+            "PACKAGE_NAME": "fi.htbaf.app"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "fi.htbaf.app"
+        }
+    }
 }
